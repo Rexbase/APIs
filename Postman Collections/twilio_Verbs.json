@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "d736d61e-d0b7-42ae-95fe-cf92f7ecd74c",
+		"name": "Twilio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SMS",
+			"item": [
+				{
+					"name": "Create Message",
+					"_postman_id": "adf1081b-905a-403c-803d-2688de66902d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": ""
+					},
+					"response": []
+				},
+				{
+					"name": "tmp",
+					"_postman_id": "8d6cebdf-3926-4ded-9856-7ace7419346b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api.twilio.com/2010-04-01/Accounts/ACf36f7d4a8a3a683b960ea378976d24a2/Messages/MM2f152c165a0121311f8148141b43aabd/Media.json"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "e560bea0-4f49-4cf4-9987-cf92fbb9360e"
+		},
+		{
+			"name": "Message Log",
+			"_postman_id": "cd99621d-3095-4b2a-9139-e95afe1a6a01",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": {
+			"password": "{{TWILIO_AUTH_TOKEN}}",
+			"username": "{{TWILIO_ACCOUNT_SID}}"
+		}
+	},
+	"variable": [
+		{
+			"id": "d0ffc289-e80a-46ac-8075-0131a9a68ac7",
+			"key": "TWILIO_ACCOUNT_SID",
+			"value": "Your Account SID",
+			"type": "string"
+		},
+		{
+			"id": "cd7ae6d0-105f-4c2a-a8e7-8654f402d554",
+			"key": "TWILIO_AUTH_TOKEN",
+			"value": "Your Auth Token",
+			"type": "string"
+		},
+		{
+			"id": "491722ba-cebe-406f-a64b-99d478596ca3",
+			"key": "TWILIO_NUMBER",
+			"value": "Your Twilio Number",
+			"type": "string"
+		}
+	]
+}
